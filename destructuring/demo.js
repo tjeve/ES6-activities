@@ -24,3 +24,20 @@ let third = array[2];
 
 let key1 = object.key1;
 let key2 = object.key2;
+
+
+// With array destructuring, you can skip values that you're not interested in:
+let [one, , three] = array;
+one === 1;
+three === "foo";
+
+
+// With object destructuring, you can rename variable names using a colon:
+let { key1: firstKey } = object;
+firstKey === "hello";
+
+// Also, if a value doesn't exist, you can provide a fallback value in your destructuring assignment:
+let { key1 = "hi", key3 = "sup"} = object;
+key1 === "hello";
+key3 === "sup";
+

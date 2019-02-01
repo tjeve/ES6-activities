@@ -18,9 +18,9 @@ let getPublisher = () => {
 
 let getPublisher = async () => {
     let response1 = await axios.get('/books');
-    let firstAuthor = response.data.books[0].author;
+    let firstAuthor = response1.data.books[0].author;
     let response2 = await axios.get(`/authors/${firstAuthor}`);
-    return response.data.publisher;
+    return response2.data.publisher;
 }
 
 // The "async" keyword should be typed right before a function definition.

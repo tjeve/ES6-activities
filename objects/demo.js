@@ -34,3 +34,16 @@ let obj3 = {
     preferredEmail: email,
     nickname: "Charlie"
 }
+
+// But wait, there's more! If your object has a key that points to a function, 
+//   you can define your function inline, like so:
+
+let obj3 = {
+    name: "Adam",
+    shout() {
+        return "AAAHHHHHH!!!"
+    }
+}
+
+obj3.shout();
+
