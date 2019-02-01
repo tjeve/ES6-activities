@@ -1,15 +1,19 @@
-// Write a function that uses an array prototype method (filter, reduce, map, etc.)
-//   to compute the total value of the mahines in the inventory array;
+// Here we have a handful of ES5 functions.
+// Spice them up by converting them to arrow functions!
 
-const inventory = [
-    { type: "machine", value: 5000 },
-    { type: "machine", value: 650 },
-    { type: "duck", value: 10 },
-    { type: "furniture", value: 1200 },
-    { type: "machine", value: 77 }
-]
 
-// Use an arrow functions instead of a regular functions!
-let totalMachineValue = YOUR_CODE_HERE
+let introduction = function(name, otherName) {
+    let introduction = name + ", let me introduce you to " + otherName;
+    return introduction;
+}
 
-console.log(totalMachineValue)
+// This one only has one parameter! 
+let boringFunction = function (topic) {
+    let complain = topic + " is so boooooring!!!";
+    return complain;
+}
+
+// This one has a single return statement!
+let shout = function() {
+    return "AAAHHHH!!"
+}

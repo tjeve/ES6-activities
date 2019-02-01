@@ -28,3 +28,17 @@ let movieTitles = movies.map(movie => movie.title);
 let movieTitles = movies.map(function(movie) {
     return movie.title;
 })
+
+
+// Arrow functions let you provide default values for parameters that don't get arguments passed in:
+let defaults = (name = "noname", age = 0, occupation = "unemployed") => {
+    return name + age + occupation
+}
+
+// The old way of providing default values is way more verbose:
+let defaults = function(name, age, occupation) {
+    name = name || "noname";
+    age = age || 0;
+    occupation = occupation || "unemployed";
+    return name + age + occupation
+}
