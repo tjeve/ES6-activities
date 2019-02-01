@@ -47,3 +47,10 @@ let obj3 = {
 
 obj3.shout();
 
+// You can also dynamically add keys to object literals:
+let keyToWrite = "key2";
+
+let obj4 = {
+    [keyToWrite]: "hi"
+}
+obj4.key2 === "hi";
