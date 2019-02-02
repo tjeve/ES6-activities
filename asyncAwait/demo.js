@@ -29,3 +29,16 @@ let getPublisher = async () => {
 // The "await" keyword is only allowed to be used in "async" functions
 // You can use "await" in front of then-able function calls.
 // The code written after your "await" line will wait patiently until the "await" promise is resolved
+
+
+// Here's an example of error handling with async/await
+const getStuffErrorTryCatch = async () => {
+    try {
+        const response = await fetch('https://google.com');
+        const responseData = await response.text()
+        console.log(responseData)
+    } catch (error) {
+        // handle error here
+        console.log(error)
+    }
+ }
