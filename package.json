@@ -1,0 +1,26 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "1. [Variables](./variables/demo.js)     * [More Details](https://javascript.info/var) 2. [Objects](./objects/demo.js) 3. [Destructuring](./destructuring/demo.js)     * [More Details](https://javascript.info/destructuring-assignment) 4. Default Parameters     * [More Details](https://javascript.info/destructuring-assignment#smart-function-parameters) 5. [Arrow Functions](./arrowFunctions/demo.js)     * [More Details](https://javascript.info/function-expressions-arrows)     * [Not ES6 specific, but very detailed information about functions](https://javascript.info/function-basics) 6. [Async/Await](./asyncAwait/demo.js)     * [More Details](https://javascript.info/async-await) 7. [Modules](./modules/demo.js)",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel --presets es2015 modules-js/main.js -o build/main.bundle.js",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamszaruga/es6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamszaruga/es6/issues"
+  },
+  "homepage": "https://github.com/adamszaruga/es6#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.11.1"
+  }
+}

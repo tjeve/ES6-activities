@@ -1,6 +1,7 @@
 # ES6 Feature Demos
 
 1. [Variables](./variables/demo.js)
+    * [More Details](https://javascript.info/var)
 2. [Objects](./objects/demo.js)
 3. [Destructuring](./destructuring/demo.js)
     * [More Details](https://javascript.info/destructuring-assignment)
