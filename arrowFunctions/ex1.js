@@ -11,7 +11,7 @@ const introduction = (name, otherName) => {
     return name + ", let me introduce you to " + otherName
 }
 
-// This one only has one parameter! 
+// This one only has one parameter!
 let boringFunction = function (topic) {
     let complain = topic + " is so boooooring!!!";
     return complain;
