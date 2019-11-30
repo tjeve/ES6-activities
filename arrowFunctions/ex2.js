@@ -10,7 +10,7 @@ const inventory = [
 ]
 
 const valueCounter = () => {
-    
+    //I kwill write valueCounter code here
 }
 
 // Filter out things that arent machines:
